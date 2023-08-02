@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseduo selectors</title>
+    <style>
+        /* There are 3 types of pseudo selectors
+        hover, visited,active */
+        .cointainer{
+            border: 2px solid red;
+            background-color: rgb(120, 228, 120);
+            padding: 34px;
+            margin: 34px;
+            width: 666px auto;
+        }
+        .btn{
+            background-color: beige;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+
+        
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover, .btn:hover{
+            background-color:aquamarine;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="cointainer" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio minus suscipit hic est quidem accusantium, ipsum quo voluptatum, dolores quos alias iusto, impedit laboriosam consectetur amet expedita sunt maxime consequatur?</p>
+        <a href="" class="btn">Read more</a>
+        <button class="btn">Click here</button>
+    </div>
+    
+</body>
+</html>

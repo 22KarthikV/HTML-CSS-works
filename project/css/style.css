@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position:relative;
+    top: 0px;
+
+}
+#navbar::before{
+    content: "";
+    background-color: beige;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+
+/* navigation bar:LOGO*/
+
+#logo1 {
+    width: 75px;
+    height: 87px;
+    cursor: pointer;
+    /* filter: invert(100%); */
+}
+
+/* navigation bar:LIST*/
+ul {
+    display: flex;
+    padding: 5px;
+    margin-left: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.list {
+    list-style: none;
+        /* padding: 10px;
+        color: black; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.list a{
+    text-decoration: none;
+    color: black;
+    padding: 24px;
+    font-size: 19px;
+
+}
+
+.list a:hover {
+    /* text-decoration: underline; */
+    color: brown
+}
+
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 622px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+/* Home section bg  */
+#home::before{
+    content: "";
+    background: url("https://cdn.pixabay.com/photo/2021/01/26/15/48/vegetables-5951982_960_720.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* Home heading and para  */
+#home h1{
+    font-size: 2rem;
+    text-align: center;
+    padding: 12px;
+    font-family: 'Cinzel', serif;
+    color: brown;
+    
+}
+#home p{
+    font-size: 1.2rem;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+/* home button  */
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 12px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+/* Utility classes  */
+.h-primary{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Cinzel', serif;
+    color: brown;
+}
+
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+    font-family: 'Quicksand', sans-serif;
+}
+.center{
+    text-align: center;
+}
+
+/* Shop section  */
+#products{
+    display: flex;
+    
+}
+.shop::before{
+    content: "";
+    background-image: none;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+}   
+.shop{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    top: 56px;
+    left: 0px;
+    /* height: 434px; */
+}
+
+#products .box{
+    border: 2px solid brown;
+    margin: 10px;
+    padding: 12px;
+    
+
+} 
+#products .box p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+#products .box img{
+    height: 150px;
+    display: block;
+    margin:auto;
+    cursor: pointer;
+}
+
+/* Client section  */
+#client-section{
+    position: relative;
+    
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(248, 199, 199);
+    
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+
+}
+
+.client-item img{
+    height: 75px;
+    cursor: pointer;
+    
+}
+.client-item{
+    padding: 10px;
+    cursor: pointer;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* Contact Us */
+#contact{
+    position: relative;
+    
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?auto=compress&cs=tinysrgb&w=600") no-repeat center center/cover ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    
+}
+#contact-box input,#contact-box textarea,
+#contact-box button
+{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+#contact-box button:hover{
+    cursor: pointer;
+}
+#contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 34px;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1.2rem;
+    color: black;
+}
+    
+
+

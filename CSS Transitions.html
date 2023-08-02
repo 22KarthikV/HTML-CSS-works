@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        .container{
+            display: block;
+            flex-direction: row;
+            background-color: beige
+            /* justify-content: center;
+            align-items: center; */
+
+
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            width: 250px;
+            background-color: black;
+            color:white;
+            transition-property: background-color;
+            transition-duration: 1s;
+            position: relative;
+            animation-name: load;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+
+        }
+        
+
+        @keyframes load {
+            
+
+            from{
+                width: 25%;
+
+            }
+            to{
+                width: 75%;
+                background-color: yellow;
+                color: black;
+            }
+            
+        }
+        .box:hover{
+            background-color: teal;
+            color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>CSS Transitions</h3>
+        <div class="box">
+            This is box
+        </div>
+    </div>
+    
+</body>
+</html>

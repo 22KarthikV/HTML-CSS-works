@@ -1,0 +1,54 @@
+
+/* Navigation Bar  */
+#navbar{
+    flex-direction: column;
+
+}
+#navbar .list a{
+    padding: 3px 9px;
+    font-size: 13px;
+
+}
+
+/* Home section  */
+#home{
+    height: 223px;
+
+
+}
+#home::before{
+    height: 400px;
+}
+#home p{
+    font-size: 13px;
+}
+#home h1 {
+    font-size: 12px;
+}
+
+.btn{
+    size: 3px;
+}
+
+/* Shop Section  */
+#products{
+    flex-direction: column;
+
+
+}
+/* Clinet Section  */
+#client-section{
+
+
+}
+/* Contact Us section  */
+#contact form{
+    width: 70%;
+
+
+}
+
+/* Utility section  */
+#btn2{
+    width: 70%;
+}

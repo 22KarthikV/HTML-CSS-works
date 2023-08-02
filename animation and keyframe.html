@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and Keyframe</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        background-color: beige;
+    }
+    .box{
+        margin: 2px;
+        width: 250px;
+        height: 250px;
+        background-color: black;
+        color: white;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name:  prog;
+        animation-duration: 2s;
+        animation-fill-mode: forwards ;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes prog {
+        from{
+            width:20%;
+        }
+        to{
+            width: 75%;
+
+        }
+
+        
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+
+
+        </div>
+    </div>
+    
+</body>
+</html>

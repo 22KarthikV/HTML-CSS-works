@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Dosis', sans-serif;
+            margin: 0;
+            padding: 0px;
+        }
+        
+        .navigation {
+            display: flex;
+            
+            
+        }
+        /* technique to remember */
+        header::before{
+            content: "";
+            background: url('https://images.unsplash.com/photo-1521996319423-90475f382dff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80') no-repeat center center /cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.3;
+
+        }
+
+        li {
+            padding: 8px;
+            list-style: none;
+            margin: 11px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 200px;
+            /* border: 2px solid rebeccapurple; */
+            justify-content: center;
+
+        }
+        section h3 {
+            font-size: 3rem;
+        }
+        .item:hover{
+            text-decoration: underline;
+        }
+
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="nabvar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+        <section>
+            <h3>Welcome to coding world</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolorem animi hic fugiat. Cum natus
+                distinctio maiores recusandae voluptatibus! Placeat totam, quidem eos iste officiis repellat odit atque,
+                distinctio est ipsam alias dolorem facilis?</p>
+        </section>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floats in CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: lightyellow;
+            font-family: 'Ubuntu', sans-serif;
+
+
+        }
+       .container{
+        border: 1px solid;
+        background-color: beige;
+        width: 600px;
+        margin: auto;
+
+       } 
+       .item{
+        background-color: #dbeeff;
+        border: 1px solid;
+        margin: 12px ;
+        padding: 16px;
+       }
+       #fruits{
+        float: left;
+        width: 48%;
+
+       }
+       #computer{
+        float: left;
+        width: 42%;
+
+
+       }    
+       #shop{
+        /* float: left; */
+        width: 48%;
+        clear: left;
+
+
+       }
+
+    </style>
+</head>
+<body>
+    <h2>Floats in CSS</h2>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p class="para" id="fruitpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, maiores dolorum alias eos repellendus veniam ipsum similique non tempora excepturi! Officia, autem ipsum velit nihil deserunt laborum sit totam voluptas.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p class="para" id="comppara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, maiores dolorum alias eos repellendus veniam ipsum similique non tempora excepturi! Officia, autem ipsum velit nihil deserunt laborum sit totam voluptas.</p>
+        </div>
+        <div id="shop" class="item">
+            <h3>Shop</h3>
+            <p class="para" id="shoppara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, maiores dolorum alias eos repellendus veniam ipsum similique non tempora excepturi! Officia, autem ipsum velit nihil deserunt laborum sit totam voluptas.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

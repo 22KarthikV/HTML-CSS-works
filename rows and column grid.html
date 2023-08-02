@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rows and columns grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            /* This is for 3 items cuz only 3 dimensions are mentioned  */
+            grid-auto-rows: 2fr;
+            /* This determines the dimensions for the rows that arent specified */
+
+            grid-template-columns: 1fr 1fr 1fr;
+            
+
+        }
+        .items{
+            border: 2px solid;
+            background-color: antiquewhite;
+            /* height: 100px;
+            width: auto; */
+            margin: 3px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">This is item-1</div>
+        <div class="items">This is item-2</div>
+        <div class="items">This is item-3</div>
+        <div class="items">This is item-4</div>
+        <div class="items">This is item-5</div>
+        <div class="items">This is item-6</div>
+        <div class="items">This is item-7</div>
+        <div class="items">This is item-8</div>
+        <div class="items">This is item-9</div>
+        <div class="items">This is item-10</div>
+    </div>
+    
+</body>
+</html>

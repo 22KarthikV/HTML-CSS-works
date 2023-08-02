@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 300px 100px 100px; 
+            /* Above one represents 3 columns and width for each one of them */
+            grid-template-columns: 1fr 3fr 1fr;
+            /* Above one is for ratios , we can divide the boxes based on the ratios */
+            grid-template-columns: repeat(3,auto);
+            /* if we want to repaeat the same features of boxes to many , we can use repeat */
+        }
+        .item{
+            height: 100px;
+            width: auto;
+            margin:3px ;
+            background-color: antiquewhite;
+            border: 2px solid;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+    </div>
+    
+</body>
+</html>
