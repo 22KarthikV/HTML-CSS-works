@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Fitness</title>
+    <style>
+        .left {
+            border: 2px solid red;
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+
+
+        }
+
+        .mid {
+            border: 2px solid green;
+            display: block;
+            position: relative;
+            width: 33%;
+            margin: auto;
+            text-align: center;
+
+
+
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 35px;
+            right: 0px;
+
+        }
+
+        .head {
+            display: block;
+            margin: 0px;
+            padding: 25px;
+            background-color: rgb(241, 192, 128);
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url(https://images.pexels.com/photos/2827392/pexels-photo-2827392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-size: cover;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 24px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+        }
+
+        .navbar li {
+            display: inline-block;
+
+        }
+
+        .left img {
+            width: 94px;
+            height: 77px;
+
+        }
+
+        .right input {
+            background: transparent;
+            margin: 3px;
+            padding: 4px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <div class="left">
+            <img src="gym.png.png" alt="Gym">
+            <div>Karthik Fitness</div>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Packages</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <input type="text" placeholder="Search Anything">
+        </div>
+    </header>
+
+</body>
+
+</html>
